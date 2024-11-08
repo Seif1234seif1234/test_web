@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title  id="title_name_of_page">create account</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../header_footer/header/styleheader.css">
+    <link rel="stylesheet" href="style_c_account.css">
+</head>
+
+<body>
+    <div id="header_create_account">
+
+    </div>
+
+    <div class="createaccount">
+        <div class="createaccount1">
+            <form action="" method="post">
+                <div class="createaccountv1">
+                    <div class="divtitle">
+                        <h1 class="title">create account</h1>
+                    </div>
+
+
+                    <div class="info">
+
+                        <div class="divnp">
+                            <div class="divprenom">
+                                <input type="text" name="prenom" id="prenom" class="prenom" required="required">
+                                <span class="tags">prenom</span>
+
+                            </div>
+                            <div class="divnom">
+                                <input type="text" name="nom" id="nom" class="nom" required="required">
+                                <span class="tags">nom</span>
+                            </div>
+                        </div>
+                        <div class="divusername">
+                            <input type="text" name="username" id="username" class="username" required="required">
+                            <span class="tags">username</span>
+                        </div>
+                        <div class="divemail">
+                            <input type="text" name="email" id="email" class="email" required="required">
+                            <span class="tags">email</span>
+
+                        </div>
+                        <div class="divnd">
+                            <div class="divnumber">
+                                <input type="number" name="number" id="phonenamber" class="number" required="required"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                <span class="tags">téléphone</span>
+                                <span class="num216">+216</span>
+                            </div>
+                            <div class="divdate">
+                                <input type="date" name="date" id="date" class="date">
+                                <span class="tags">date</span>
+                            </div>
+                        </div>
+                        <div class="divprp">
+                            <div class="divpassword">
+
+                                <div class="divchowp">
+                                    <div class="divchowp1">
+                                        <input type="password" name="password" id="password" class="password"
+                                            required="required" >
+                                        <span class="tags">mod de pass</span>
+                                        <!-- <div class="password_condition_error" id="password_condition_error">fgdfgfdg</div> -->
+                                    </div>
+                                    <span class="divchowpassword"><i class="fa-solid fa-eye" id="chowpassword"
+                                            onclick="passchow()"></i></span>
+                                    
+                                </div>
+
+
+                            </div>
+                            <div class="divrpassword">
+                                <input type="password" name="" id="rpassword" class="rpassword" required="required">
+                                <span class="tags">Réinitialiser le mot de passe</span>
+                            </div>
+                            <p id="inputerror"></p>
+                        </div>
+                    </div>
+
+                    <div class="divbutton">
+                        <div class="divbuttonseconnecter"><a href="../login/index_login.html"><input type="button" value="se connecter" class="buttonseconnecter" id="buttonseconnecter" ></a>
+                        </div>
+                        <div class="divbuttoncreate"><input type="button" value="create" class="buttoncreate" id="buttoncreate"
+                                name="ssddff" ></div>
+                    </div>
+                </div>
+            </form>
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        </div>
+
+    </div>
+
+    <div id="testdiv" >
+       
+    </div>
+
+
+
+
+
+    <footer class="footer">
+
+    </footer>
+    <script src="../createaccount/commend_c_account.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        $(function () {
+            $("#header_create_account").load("../header_footer/header/partagerheader/partagerheader.html");
+        })
+        //http://localhost/my_first_site_web/header_footer/header/partagerheader/partagerheader.html
+        //../header_footer/header/partagerheader/partagerheader.html
+    </script>
+    </script>
+
+</body>
+
+</html>

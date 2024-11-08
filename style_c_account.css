@@ -1,0 +1,392 @@
+@import url("https://fonts.googleleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root{
+    --background_colo_body:rgb(255, 255, 255);
+}
+body{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--background_colo_body);
+}
+
+  /*        elements           */
+
+  .createaccount{
+    background-color: var(--background_colo_body);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:20px;
+    position: relative;
+  }
+  .createaccountv1{
+
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  /*            divtitle                */
+  .divtitle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .title{
+    font-size: 40px;
+  }
+
+  /*            information             */
+
+  .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+  }
+  
+
+
+  input{
+    width: 100%;
+    padding: 9px;
+    border: 2px solid rgb(78, 68, 68);
+    border-radius: 4px;
+    background-color: none; 
+    outline: none;
+    color: rgb(110, 104, 93);
+    font-size: 1em;
+    height: 40px;
+  }
+  .tags{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 10px;
+    font-size: 1em;
+    color: rgb(117, 99, 99);
+    text-transform: uppercase;
+    transition: 0.4s;
+    
+
+  }
+  .info input:valid ~ .tags,
+  .info input:focus ~ .tags {
+    color: rgb(55, 57, 58);
+    transform: translateX(11px) translateY(-4px);
+    font-size: 0.6em;
+    padding: 0 10px;
+    background: rgb(255, 255, 255);
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  /*            divnp            */
+
+  .divnp{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  /*            dinnom          */
+
+  .divnom{
+    position: relative;
+    min-width: 100px;
+    width: 110%;
+  }
+
+  .nom{
+    width: 100%;
+  }
+
+  /*            divprenom           */
+
+  .divprenom{
+    position: relative;
+    min-width: 100px;
+    width: 100%;
+  }
+
+  .prenom{
+    width: 100%;
+  }
+
+  /*            end divnp            */
+
+  /*            divemail               */
+
+  .divemail{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 100px;
+    width: 100%;
+  }
+
+  .email{
+    width: 100%;
+  }
+  /*            end divemail           */
+
+  /*            divnd             */
+
+  .divnd{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  /*            divnumber          */
+
+  .divnumber{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 100px;
+    width: 100%;
+    
+  }
+  .number::-webkit-outer-spin-button,
+  .number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .number{
+    width: 100%;
+    outline: none;
+    padding-left:58px ;
+    -moz-appearance: textfield;
+  }
+
+  .num216{
+    position: absolute;
+    left: 0;
+    font-size: 1em;
+    height: 36px;
+    width: 45px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: px;
+    margin-top:2px ;
+    color: rgb(68, 59, 59);
+    border-right: 1px solid gray ;
+  }
+  .divnumber .tags{
+    padding-left: 50px;
+  }
+  .divnumber input:valid ~ .tags,
+  .divnumber input:focus ~ .tags {
+    transform: translateX(60px) translateY(-4px);
+  }
+  /*            divdate            */
+  
+  .divdate{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 100px;
+    width: 260px;
+  }
+
+  .date{
+    width: 100%;
+    text-align: center;
+  }
+  /*            end divnd            */
+
+  /*            divprp            */
+  .divprp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  /*            divpassword         */
+  .divpassword{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .password{
+    width: 100%;
+  }
+  .password_condition_error{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    
+  }
+  /*            divchowp            */
+
+  .divchowp{
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  .divchowp1{
+    width: 100%;
+    position: relative;
+  }
+  #chowpassword{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 40px;
+  width: 40px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  position:absolute;
+  transform: translateX(-100%);
+  }
+  /*            end divchowp            */
+
+  /*            divrpassword            */
+  
+  .divrpassword{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .rpassword{
+    width: 100%;
+  }
+
+  /*            end divprp       */
+
+  /*            divbutton           */
+  .divbutton input{
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #d6d2d2;
+  }
+  .divbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    gap: 10px;
+    width: 100%;
+
+  }
+  .divbuttonseconnecter{
+    min-width:50px;
+    width: 100%;
+  }
+  .buttonseconnecter{
+    width: 100%;
+  }
+  .divbuttoncreate{
+    min-width:50px;
+    width: 100%;
+  }
+  .buttoncreate{
+    width: 100%;
+  
+  }
+  .buttonseconnecter,.buttoncreate{
+    cursor: pointer;
+  }
+  /*            end divchowp            */
+  /*            end elements            */
+
+    @media screen and (max-width:451px) {
+        .title{
+            font-size: 30px;
+        }
+        .createaccountv1{
+            width: 320px;
+        }
+        .tags{
+            font-size: 15px;
+        }
+        .createaccountv1    input{
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* @media screen and (min-width: 900px){
+    .createaccount1{
+      display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 50px;
+     border: 2px solid;
+     padding: 15px;
+     border-radius: 12px;
+     margin-bottom: 15px;
+    }
+    .divbook{
+      padding-top:15px ;
+      width: 300px;
+      height: 300px;
+    }
+    .divtitle{
+      justify-content:left;
+      border-bottom: 1px solid;
+    }
+  } */
+    /* @media screen and (max-width:470px) {
+    .headerv2 .name {
+        font-size: 25px;
+      }
+
+    .title{
+      font-size: 30px;
+    }
+    .createaccountv1{
+      width: 300px;
+    }
+    .tags{
+      font-size: 10px;
+      padding-top: 15px;
+    }
+    .divnumber .tags{
+      padding-top: 10px;
+    }
+    .info input:valid ~ .tags,
+    .info input:focus ~ .tags {
+      font-size: 7px;
+    }
+    .footerv3{
+        font-size: 25px;
+        flex-direction: column;
+    }
+
+  } */
